@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "4e4b2fb8-fec9-4597-a1c7-4950001996db",
+		"name": "NOKIA_TASK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17475245",
+		"_collection_link": "https://deepesh-146.postman.co/workspace/demo~6d08744a-976c-4d96-9e6f-77a25031c593/collection/17475245-4e4b2fb8-fec9-4597-a1c7-4950001996db?action=share&source=collection_link&creator=17475245"
+	},
+	"item": [
+		{
+			"name": "(string to number) earth-to-mars",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-sender",
+						"value": "earth",
+						"type": "text"
+					},
+					{
+						"key": "x-receiver",
+						"value": "mars",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"hello i am deepesh here\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/earth-mars-comm/message",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"earth-mars-comm",
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(number to string) mars-to-earth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-sender",
+						"value": "mars",
+						"type": "text"
+					},
+					{
+						"key": "x-receiver",
+						"value": "earth",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"4433555.555666 444 26 3.33.33733777744 443377733\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/earth-mars-comm/message",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"earth-mars-comm",
+						"message"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
